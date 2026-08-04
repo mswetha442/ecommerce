@@ -1,0 +1,86 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+
+       <a class="navbar-brand fw-bold fs-3" href="{% url 'home' %}">
+       <i class="bi bi-bag-fill me-2"></i> PrimeBasket
+          
+       </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <div class="navbar-nav ms-auto align-items-lg-center">
+
+                <a class="nav-link px-3" href="{% url 'home' %}">
+                <i class="bi bi-house-fill me-1"></i> Home
+                   
+                </a>
+
+               
+                <a class="nav-link px-3" href="{% url 'collections' %}">
+                <i class="bi bi-grid-fill me-1"></i> Collections 
+                    
+                </a>
+
+
+                <a class="nav-link px-3" href="{% url 'cart' %}">
+                <i class="bi bi-cart-fill me-1"></i> Cart
+         
+                </a>
+
+
+                <a class="nav-link px-3" href="{% url 'favviewpage' %}">
+                
+                <i class="bi bi-heart-fill me-1 text-danger"></i> Favorites   
+
+                </a>
+
+                {% if request.user.is_authenticated %}
+
+                    <a class="nav-link px-3" href="{% url 'my_orders' %}">
+                    <i class="bi bi-receipt me-1"></i> My Orders   
+                     
+                    </a>
+
+                    <a class="nav-link px-3" href="#">
+                    <i class="bi bi-person-fill me-1"></i> {{ request.user }}
+                    </a>
+
+                   <a class="nav-link px-3" href="{% url 'logout' %}">
+                   <i class="bi bi-box-arrow-right me-1"></i> Logout
+                    </a>
+                    
+
+                {% else %}
+
+                    <a class="nav-link px-3" href="{% url 'login' %}">
+                        <i class="fa fa-sign-in me-1"></i>
+                        Login
+                    </a>
+
+                    <a class="nav-link px-3" href="{% url 'register' %}">
+                        <i class="fa fa-user-plus me-1"></i>
+                        Register
+                    </a>
+
+                {% endif %}
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>

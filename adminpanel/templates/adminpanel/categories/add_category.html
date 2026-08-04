@@ -1,0 +1,85 @@
+{% extends 'adminpanel/base.html' %}
+
+{% block content %}
+
+<div class="main-content">
+
+    <div class="admin-navbar">
+        <h3>Add Category</h3>
+
+        <a href="{% url 'category_list' %}" class="btn-add">
+            ← Back
+        </a>
+    </div>
+
+    <div class="product-form">
+
+        <form method="POST" enctype="multipart/form-data">
+
+            {% csrf_token %}
+
+            <div class="form-group">
+                <label>Category Name</label>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter category name"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label>Description</label>
+
+                <textarea
+                    name="description"
+                    rows="5"
+                    placeholder="Enter category description"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Category Image</label>
+                <input
+                    type="file"
+                    name="image"
+                    accept="image/*">
+            </div>
+
+            <div class="form-check">
+
+                <input
+                    type="checkbox"
+                    name="trending"
+                    id="trending">
+
+                <label for="trending">
+                    Trending Category
+                </label>
+
+            </div>
+
+            <div class="form-check">
+
+                <input
+                    type="checkbox"
+                    name="status"
+                    id="status">
+
+                <label for="status">
+                    Hide Category
+                </label>
+
+            </div>
+
+            <br>
+
+            <button type="submit" class="save-btn">
+                Save Category
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+{% endblock %}

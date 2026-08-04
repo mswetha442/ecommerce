@@ -1,0 +1,192 @@
+{% extends "adminpanel/base.html" %}
+
+{% block title %}
+Order Details
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <h3 class="mb-4">
+        Order #{{ order.id }}<span class="badge bg-warning">
+    {{ order.order_status }}
+</span>
+    </h3>
+
+    <div class="row">
+
+        <!-- Customer Details -->
+        <div class="col-md-4">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-dark text-white">
+                    Customer Details
+                </div>
+
+                <div class="card-body">
+
+                    <p><strong>Name:</strong> {{ order.fname }} {{ order.lname }}</p>
+
+                    <p><strong>Email:</strong> {{ order.email }}</p>
+
+                    <p><strong>Phone:</strong> {{ order.phone }}</p>
+
+                    <p><strong>Address:</strong> {{ order.address }}</p>
+
+                    <p><strong>City:</strong> {{ order.city }}</p>
+
+                    <p><strong>State:</strong> {{ order.state }}</p>
+
+                    <p><strong>Country:</strong> {{ order.country }}</p>
+
+                    <p><strong>Pincode:</strong> {{ order.pincode }}</p>
+
+                    <hr>
+
+                    <h5>Total : ₹{{ order.total_price|floatformat:0 }}</h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Products -->
+        <div class="col-md-8">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-primary text-white">
+                    Ordered Products
+                </div>
+
+                <div class="card-body">
+
+                    <table class="table table-bordered">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Image</th>
+
+                                <th>Product</th>
+
+                                <th>Price</th>
+
+                                <th>Qty</th>
+
+                                <th>Total</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                        {% for item in items %}
+
+                        <tr>
+
+                            <td>
+                                <img src="{{ item.product.product_image.url }}"
+                                     width="70">
+                            </td>
+
+                            <td>{{ item.product.name }}</td>
+
+                            <td>₹{{ item.price|floatformat:0 }}</td>
+
+                            <td>{{ item.quantity }}</td>
+
+                            <td>₹{{ item.total|floatformat:0 }}</td>
+
+                        </tr>
+
+                        {% empty %}
+
+                        <tr>
+
+                            <td colspan="5" class="text-center">
+                                No Products Found
+                            </td>
+
+                        </tr>
+
+                        {% endfor %}
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="card shadow mt-4">
+
+                <div class="card-header bg-success text-white">
+                    Update Order Status
+                </div>
+
+                <div class="card-body">
+
+                    <form method="POST">
+
+                        {% csrf_token %}
+
+                        <div class="row">
+
+                            <div class="col-md-8">
+
+                                <select name="status" class="form-select">
+
+                                    <option value="Pending"
+                                    {% if order.order_status == "Pending" %}selected{% endif %}>
+                                        Pending
+                                    </option>
+
+                                    <option value="Shipped"
+                                    {% if order.order_status == "Shipped" %}selected{% endif %}>
+                                        Shipped
+                                    </option>
+
+                                    <option value="Delivered"
+                                    {% if order.order_status == "Delivered" %}selected{% endif %}>
+                                        Delivered
+                                    </option>
+
+                                    <option value="Cancelled"
+                                    {% if order.order_status == "Cancelled" %}selected{% endif %}>
+                                        Cancelled
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <button class="btn btn-success w-100">
+                                    Update
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,184 @@
+{% extends 'store/layouts/main.html' %}
+
+{% block title %}
+PrimeBasket | Cart
+{% endblock title %}
+
+{% block content %}
+
+<section class="bg-light py-4 my-5" style="min-height:600px;">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12">
+                <h4 class="mb-3">Cart Items</h4>
+                <hr class="border border-secondary;">
+            </div>
+
+            <table class="table table-bordered">
+                <tr>
+                    <th>Image</th>
+                    <th>Product Name</th>
+                    <th>Unit</th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
+                    <th>Remove</th>
+                </tr>
+
+                {% for item in cart %}
+                <tr>
+
+                    <td>
+                        <img src="{{ item.product.product_image.url }}" height="75">
+                    </td>
+
+                    <td>
+                        {{ item.product.name }}
+                    </td>
+
+                    <td>
+                        {{ item.product.selling_price|stringformat:'d' }}
+                    </td>
+
+                    <td>
+
+                        <div class="input-group" style="width:130px;">
+
+                            <button type="button"
+                                    class="btn btn-outline-secondary btn-minus"
+                                    data-id="{{ item.id }}">
+                                -
+                            </button>
+
+                            <input type="text"
+                                   class="form-control text-center qty-input"
+                                   value="{{ item.product_qty }}"
+                                   readonly>
+
+                            <button type="button"
+                                    class="btn btn-outline-secondary btn-plus"
+                                    data-id="{{ item.id }}">
+                                +
+                            </button>
+
+                        </div>
+
+                    </td>
+
+                    <td class="amt">
+                        {{ item.total_cost|stringformat:'d' }}
+                    </td>
+
+                    <td>
+                        <a href="{% url 'remove_cart' item.id %}"
+                           class="btn btn-danger btn-sm">
+                            Remove
+                        </a>
+                    </td>
+
+                </tr>
+                {% endfor %}
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"><b>Total Amount</b></td>
+                    <td id="net">
+                          ₹{{ cart_total }}
+                    </td>
+                    <td></td>
+                </tr>
+
+            </table>
+        <div class="text-end mt-3">
+        <a href="{% url 'checkout' %}" class="btn btn-success btn-lg">
+                 Proceed to Checkout
+        </a>
+</div>
+        </div>
+    </div>
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+   
+    let total = 0;
+    document.querySelectorAll(".amt").forEach(function(item){
+        total += Number(item.textContent);
+    });
+    document.getElementById("net").innerHTML = "Rs : " + total;
+
+    const csrftoken = "{{ csrf_token }}";
+
+    document.querySelectorAll(".btn-plus").forEach(function(btn){
+
+        btn.addEventListener("click", function(){
+
+            let qtyInput = this.parentElement.querySelector(".qty-input");
+            let qty = parseInt(qtyInput.value) + 1;
+            qtyInput.value = qty;
+
+            fetch("/updatecart/",{
+                method:"POST",
+                headers:{
+                    "Content-Type":"application/json",
+                    "X-Requested-With":"XMLHttpRequest",
+                    "X-CSRFToken":csrftoken
+                },
+                body:JSON.stringify({
+                    cart_id:this.dataset.id,
+                    qty:qty
+                })
+            })
+            .then(res=>res.json())
+            .then(data=>{
+                console.log(data.status);
+                location.reload();
+            });
+
+        });
+
+    });
+
+    // MINUS
+    document.querySelectorAll(".btn-minus").forEach(function(btn){
+
+        btn.addEventListener("click", function(){
+
+            let qtyInput = this.parentElement.querySelector(".qty-input");
+            let qty = parseInt(qtyInput.value);
+
+            if(qty>1){
+
+                qty--;
+                qtyInput.value=qty;
+
+                fetch("/updatecart/",{
+                    method:"POST",
+                    headers:{
+                        "Content-Type":"application/json",
+                        "X-Requested-With":"XMLHttpRequest",
+                        "X-CSRFToken":csrftoken
+                    },
+                    body:JSON.stringify({
+                        cart_id:this.dataset.id,
+                        qty:qty
+                    })
+                })
+                .then(res=>res.json())
+                .then(data=>{
+                    console.log(data.status);
+                    location.reload();
+                });
+
+            }
+
+        });
+
+    });
+
+});
+</script>
+
+
+{% endblock content %}

@@ -1,0 +1,158 @@
+{% extends 'store/layouts/main.html' %}
+{% load static %}
+
+{% block title %}
+{{ category_name }} Products
+{% endblock title %}
+
+{% block content %}
+
+<section class="bg-light py-4 my-5" style="min-height:600px;">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <h4 class="mb-3">{{ category_name }} Products</h4>
+
+                <hr style="border-color:#b8bfc2;">
+
+                <nav aria-label="breadcrumb">
+
+                    <ol class="breadcrumb">
+
+                        <li class="breadcrumb-item">
+                            <a href="{% url 'home' %}">Home</a>
+                        </li>
+
+                        <li class="breadcrumb-item active">
+                            {{ category_name }}
+                        </li>
+
+                    </ol>
+
+                </nav>
+
+                {% include 'store/inc/message.html' %}
+
+            </div>
+
+            {% for item in products %}
+
+            <div class="col-md-4 col-lg-3 mb-4">
+
+                <div class="card h-100 shadow-sm position-relative">
+
+                    <div class="position-relative">
+
+                        <img src="{{ item.product_image.url }}"
+                             class="card-img-top"
+                             alt="{{ item.name }}"
+                             style="height:250px;object-fit:cover;">
+
+                        <button
+                            class="btn btn-light rounded-circle shadow position-absolute top-0 end-0 m-2 fav-btn"
+                            data-product="{{ item.id }}">
+
+                            <i class="fa fa-heart text-danger"></i>
+
+                        </button>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <a href="{% url 'product_details' category_name item.name %}"
+                           class="text-decoration-none">
+
+                            <h5 class="text-primary">
+                                {{ item.name }}
+                            </h5>
+
+                            <p class="text-muted">
+                                {{ item.vendor }}
+                            </p>
+
+                            <div>
+
+                                <span class="text-decoration-line-through text-muted">
+                                    ₹{{ item.original_price }}
+                                </span>
+
+                                <span class="float-end fw-bold text-success">
+                                    ₹{{ item.selling_price }}
+                                </span>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            {% empty %}
+
+            <div class="col-12 text-center">
+
+                <h5>No Products Available</h5>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+$(document).on("click", ".fav-btn", function(e){
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    let product_id = $(this).data("product");
+
+    fetch("/fav/",{
+
+        method:"POST",
+
+        headers:{
+            "Accept":"application/json",
+            "Content-Type":"application/json",
+            "X-Requested-With":"XMLHttpRequest",
+            "X-CSRFToken":"{{ csrf_token }}"
+        },
+
+        body:JSON.stringify({
+            pid:product_id
+        })
+
+    })
+
+    .then(response=>response.json())
+
+    .then(data=>{
+
+        alert(data.status);
+
+    })
+
+    .catch(error=>{
+
+        console.log(error);
+
+    });
+
+});
+
+</script>
+
+{% endblock %}

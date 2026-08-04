@@ -1,0 +1,167 @@
+{% extends "adminpanel/base.html" %}
+
+{% block title %}
+Orders
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <h3 class="mb-4">
+        Orders
+    </h3>
+
+    <!-- Search -->
+
+    <div class="card shadow-sm mb-4">
+
+        <div class="card-body">
+
+            <form method="GET">
+
+                <div class="row">
+
+                    <div class="col-md-10">
+
+                        <input
+                            type="text"
+                            name="q"
+                            class="form-control"
+                            placeholder="Search Order ID, Name, Email, Phone"
+                            value="{{ query|default:'' }}">
+
+                    </div>
+
+                    <div class="col-md-2">
+
+                        <button type="submit" class="btn btn-primary w-100">
+                            Search
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- Orders Table -->
+
+    <div class="card shadow">
+
+        <div class="card-body">
+
+            <table class="table table-bordered table-hover align-middle">
+
+                <thead class="table-dark">
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                {% for order in orders %}
+
+                    <tr>
+
+                        <td>#{{ order.id }}</td>
+
+                        <td>
+                            {{ order.fname }} {{ order.lname }}
+                        </td>
+
+                        <td>{{ order.email }}</td>
+
+                        <td>{{ order.phone }}</td>
+
+                        <td>
+                            ₹{{ order.total_price|floatformat:0 }}
+                        </td>
+
+                        <td>
+
+                            {% if order.order_status == "Pending" %}
+
+                                <span class="badge bg-warning text-dark">
+                                    Pending
+                                </span>
+
+                            {% elif order.order_status == "Shipped" %}
+
+                                <span class="badge bg-primary">
+                                    Shipped
+                                </span>
+
+                            {% elif order.order_status == "Delivered" %}
+
+                                <span class="badge bg-success">
+                                    Delivered
+                                </span>
+
+                            {% elif order.order_status == "Cancelled" %}
+
+                                <span class="badge bg-danger">
+                                    Cancelled
+                                </span>
+
+                            {% else %}
+
+                                <span class="badge bg-secondary">
+                                    {{ order.order_status }}
+                                </span>
+
+                            {% endif %}
+
+                        </td>
+
+                        <td>
+
+                            <a href="{% url 'admin_order_details' order.id %}"
+                               class="btn btn-primary btn-sm">
+
+                                View
+
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                {% empty %}
+
+                    <tr>
+
+                        <td colspan="7" class="text-center">
+                            No Orders Found
+                        </td>
+
+                    </tr>
+
+                {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,224 @@
+{% extends 'store/layouts/main.html' %}
+
+{% block title %}
+PrimeBasket | Checkout
+{% endblock %}
+
+{% block content %}
+
+<section class="bg-light py-4 my-5" style="min-height:600px;">
+
+<div class="container">
+
+<div class="row">
+
+
+<div class="col-md-7">
+
+<h4>Billing Details</h4>
+<hr>
+
+
+<form method="POST">
+
+{% csrf_token %}
+
+
+<div class="mb-3">
+<label>First Name</label>
+<input type="text" name="fname" class="form-control" required>
+</div>
+
+
+<div class="mb-3">
+<label>Last Name</label>
+<input type="text" name="lname" class="form-control" required>
+</div>
+
+
+<div class="mb-3">
+<label>Email</label>
+<input type="email" name="email" class="form-control" required>
+</div>
+
+
+<div class="mb-3">
+<label>Phone</label>
+<input type="text" name="phone" class="form-control" required>
+</div>
+
+
+<div class="mb-3">
+<label>Address</label>
+
+<textarea 
+name="address" 
+class="form-control"
+required></textarea>
+
+</div>
+
+
+<div class="mb-3">
+<label>City</label>
+
+<input 
+type="text"
+name="city"
+class="form-control"
+required>
+
+</div>
+
+
+<div class="mb-3">
+<label>State</label>
+
+<input 
+type="text"
+name="state"
+class="form-control"
+required>
+
+</div>
+
+
+<div class="mb-3">
+<label>Country</label>
+
+<input 
+type="text"
+name="country"
+class="form-control"
+required>
+
+</div>
+
+
+<div class="mb-3">
+<label>Pincode</label>
+
+<input 
+type="text"
+name="pincode"
+class="form-control"
+required>
+
+</div>
+
+
+<div class="mb-3">
+
+<label>Payment Mode</label>
+
+<select name="payment_mode" class="form-control">
+
+<option value="COD">
+Cash On Delivery
+</option>
+
+
+<option value="ONLINE">
+Online Payment
+</option>
+
+
+</select>
+
+</div>
+
+
+</div>
+
+
+
+<div class="col-md-5">
+
+
+<h4>Order Summary</h4>
+
+<hr>
+
+
+<table class="table table-bordered">
+
+
+<tr>
+
+<th>Product</th>
+<th>Qty</th>
+<th>Amount</th>
+
+</tr>
+
+
+
+{% for item in cart_items %}
+
+<tr>
+
+<td>
+{{ item.product.name }}
+</td>
+
+
+<td>
+{{ item.product_qty }}
+</td>
+
+
+<td>
+₹{{ item.total_cost }}
+</td>
+
+
+</tr>
+
+
+{% endfor %}
+
+
+
+<tr>
+
+<td colspan="2">
+<b>Total</b>
+</td>
+
+
+<td>
+<b>
+₹{{ total }}
+</b>
+</td>
+
+</tr>
+
+
+</table>
+
+
+
+<button 
+type="submit" 
+class="btn btn-success w-100">
+
+Place Order
+
+</button>
+
+
+</form>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+{% endblock %}

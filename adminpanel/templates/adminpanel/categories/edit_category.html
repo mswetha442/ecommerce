@@ -1,0 +1,121 @@
+{% extends 'adminpanel/base.html' %}
+
+{% block content %}
+
+<div class="main-content">
+
+    <div class="admin-navbar">
+        <h3>Edit Category</h3>
+
+        <a href="{% url 'category_list' %}" class="btn-add">
+            ← Back
+        </a>
+    </div>
+
+    <div class="product-form">
+
+        <form method="POST" enctype="multipart/form-data">
+
+            {% csrf_token %}
+
+            <!-- Category Name -->
+
+            <div class="form-group">
+                <label>Category Name</label>
+
+                <input
+                    type="text"
+                    name="name"
+                    value="{{ category.name }}"
+                    required>
+            </div>
+
+            <!-- Description -->
+
+            <div class="form-group">
+                <label>Description</label>
+
+                <textarea
+                    name="description"
+                    rows="5">{{ category.description }}</textarea>
+            </div>
+
+            <!-- Current Image -->
+
+            <div class="form-group">
+
+                <label>Current Image</label><br>
+
+                {% if category.image %}
+                    <img src="{{ category.image.url }}"
+                         width="120"
+                         height="120"
+                         style="border-radius:10px;">
+                {% else %}
+                    <p>No Image</p>
+                {% endif %}
+
+            </div>
+
+            <!-- Change Image -->
+
+            <div class="form-group">
+                <label>Change Image</label>
+
+                <input
+                    type="file"
+                    name="image"
+                    accept="image/*">
+            </div>
+
+            <!-- Trending -->
+
+            <div class="form-check">
+
+                <input
+                    type="checkbox"
+                    id="trending"
+                    name="trending"
+                    {% if category.trending %}checked{% endif %}>
+
+                <label for="trending">
+                    Trending Category
+                </label>
+
+            </div>
+
+            <br>
+
+            <!-- Status -->
+
+            <div class="form-check">
+
+                <input
+                    type="checkbox"
+                    id="status"
+                    name="status"
+                    {% if category.status %}checked{% endif %}>
+
+                <label for="status">
+                    Hide Category
+                </label>
+
+            </div>
+
+            <br>
+
+            <!-- Button -->
+
+            <button type="submit" class="save-btn">
+
+                Update Category
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+{% endblock %}

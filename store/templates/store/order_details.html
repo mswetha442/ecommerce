@@ -1,0 +1,181 @@
+{% extends 'store/layouts/main.html' %}
+
+{% block title %}
+PrimeBasket | Order Details
+{% endblock %}
+
+{% block content %}
+
+<section class="bg-light py-4 my-5" style="min-height:600px;">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Customer Details -->
+            <div class="col-md-5">
+
+                <div class="card shadow-sm mb-4">
+
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0">Customer Details</h5>
+                    </div>
+
+                    <div class="card-body">
+
+                        <p><strong>Name :</strong> {{ order.fname }} {{ order.lname }}</p>
+
+                        <p><strong>Email :</strong> {{ order.email }}</p>
+
+                        <p><strong>Phone :</strong> {{ order.phone }}</p>
+
+                        <p><strong>Address :</strong> {{ order.address }}</p>
+
+                        <p><strong>City :</strong> {{ order.city }}</p>
+
+                        <p><strong>State :</strong> {{ order.state }}</p>
+
+                        <p><strong>Country :</strong> {{ order.country }}</p>
+
+                        <p><strong>Pincode :</strong> {{ order.pincode }}</p>
+
+                        <hr>
+
+                        <h5>Total : ₹{{ order.total_price }}</h5>
+
+                        {% if order.order_status == "Pending" %}
+                            <span class="badge bg-warning text-dark">
+                                {{ order.order_status }}
+                            </span>
+                        {% elif order.order_status == "Shipped" %}
+                            <span class="badge bg-primary">
+                                {{ order.order_status }}
+                            </span>
+                        {% elif order.order_status == "Delivered" %}
+                            <span class="badge bg-success">
+                                {{ order.order_status }}
+                            </span>
+                        {% else %}
+                            <span class="badge bg-secondary">
+                                {{ order.order_status }}
+                            </span>
+                        {% endif %}
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Ordered Products -->
+            <div class="col-md-7">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Ordered Products</h5>
+                    </div>
+
+                    <div class="card-body">
+
+                        <table class="table table-bordered table-hover align-middle">
+
+                            <thead class="table-light">
+
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Qty</th>
+                                    <th>Total</th>
+                                </tr>
+
+                            </thead>
+
+                           
+<tbody>
+
+{% for item in items %}
+
+<tr>
+
+    <td>
+        <img src="{{ item.product.product_image.url }}"
+             width="70"
+             height="70"
+             class="rounded">
+    </td>
+
+    <td>{{ item.product.name }}</td>
+
+    <td>₹{{ item.price|floatformat:0 }}</td>
+
+    <td>{{ item.quantity }}</td>
+
+    <td>₹{{ item.total|floatformat:0 }}</td>
+
+         </tr>
+
+          {% empty %}
+
+           <tr>
+           <td colspan="5" class="text-center">
+            No Products Found
+            </td>
+            </tr>
+
+              {% endfor %}
+
+               </tbody>
+
+               <tfoot class="table-light">
+
+                <tr>
+
+                <th colspan="4" class="text-end">
+                  Grand Total
+                </th>
+
+                 <th>
+               ₹{{ order.total_price|floatformat:0 }}
+                  </th>
+
+                   </tr>
+
+                       </tfoot>
+                        </table>
+
+                        <div class="text-end">
+
+                            <a href="{% url 'my_orders' %}"
+                               class="btn btn-secondary">
+
+                                ← Back to My Orders
+
+                            </a>
+                        <div class="text-end">
+
+                          <a href="{% url 'download_invoice' order.id %}"  class="btn btn-success">
+                                   Download Invoice
+                          </a>
+
+                         <a href="{% url 'my_orders' %}" class="btn btn-secondary">
+                                    Back
+                         </a>
+ 
+                        </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
