@@ -10,7 +10,7 @@ from django.shortcuts import get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from reportlab.pdfgen import canvas
-from .models import Order, OrderItem
+
 
 def home(request):
     products = Product.objects.filter(trending=True)
@@ -339,29 +339,6 @@ def checkout(request):
         }
     )
     
-def order_details(request, oid):
-
-    if request.user.is_authenticated:
-
-        order = get_object_or_404(
-            Order,
-            id=oid,
-            user=request.user
-        )
-
-        items = OrderItem.objects.filter(order=order)
-
-        return render(
-            request,
-            "store/order_details.html",
-            {
-                "order": order,
-                "items": items,
-            }
-        )
-
-    return redirect("/")
-
 @login_required
 def my_orders(request):
 
@@ -379,11 +356,11 @@ def my_orders(request):
 
 
 @login_required
-def order_details(request, id):
+def order_details(request,oid):
 
     order = get_object_or_404(
         Order,
-        id=id,
+        id=oid,
         user=request.user
     )
 
@@ -397,6 +374,7 @@ def order_details(request, id):
             "items": items,
         }
     )
+    
 def order_success(request, order_id):
 
     order = Order.objects.get(id=order_id)

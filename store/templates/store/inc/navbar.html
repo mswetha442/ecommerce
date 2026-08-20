@@ -65,16 +65,18 @@
 
                 {% else %}
 
-                    <a class="nav-link px-3" href="{% url 'login' %}">
-                        <i class="fa fa-sign-in me-1"></i>
-                        Login
-                    </a>
+                    
+             <li class="nav-item">
+             <a class="nav-link" href="{% url 'login' %}">
+             <i class="bi bi-box-arrow-in-right"></i> Login
+             </a>
+             </li>
 
-                    <a class="nav-link px-3" href="{% url 'register' %}">
-                        <i class="fa fa-user-plus me-1"></i>
-                        Register
-                    </a>
-
+            <li class="nav-item">
+            <a class="nav-link" href="{% url 'register' %}">
+            <i class="bi bi-person-plus-fill"></i> Register
+            </a>
+            </li>
                 {% endif %}
 
             </div>
