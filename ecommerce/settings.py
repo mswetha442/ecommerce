@@ -50,8 +50,7 @@ INSTALLED_APPS = [
     'cloudinary',
     # Your custom apps...
     CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'lcuptldi
-',
+    'CLOUD_NAME': 'lcuptldi',
     'API_KEY': '835293999235681',
     'API_SECRET': '2mnwh_f5efGbQR9y7-cyAWD3t50',
 }
