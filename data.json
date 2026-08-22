@@ -1,0 +1,1491 @@
+[
+{
+    "model": "store.category",
+    "pk": 1,
+    "fields": {
+        "name": "Mobile",
+        "image": "uploads/20260801144437dd46cd6b14f82e05cced6710d0664a45.jpg",
+        "description": "Latest Model Phones",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T03:45:54.938Z"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 4,
+    "fields": {
+        "name": "Appliances &  Electronics",
+        "image": "uploads/20260801144545f0f9e45724771f16745ad3f6f640d3ce.jpg",
+        "description": "Smart Appliances for smarter and easier life",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T05:17:59.126Z"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 5,
+    "fields": {
+        "name": "Home Decor",
+        "image": "uploads/20260801144233home_decor.jpg",
+        "description": "Elevate for Home Decor Style your space , inspire your life.",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:06:52.884Z"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 7,
+    "fields": {
+        "name": "Kitchen & Dining",
+        "image": "uploads/20260801232912938d4699feefb6bfaf1932ee44595af2.jpg",
+        "description": "The finer details collective for Kitchen & Dining Experience",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:28:31.654Z"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 8,
+    "fields": {
+        "name": "Furnitures",
+        "image": "uploads/20260801144212Furniture.jpg",
+        "description": "Crafting sophisticated spaces with timeless appeal.",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:39:48.305Z"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 9,
+    "fields": {
+        "name": "Grocery & Gourmet",
+        "image": "uploads/2026080114420213021574307d41b04d6dc621ab57b1a4.jpg",
+        "description": "Fresh and Fine Foods",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-23T04:40:36.538Z"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 11,
+    "fields": {
+        "name": "Beauty",
+        "image": "uploads/202608011441537614f8ad910a7c42316642f6e7394592.jpg",
+        "description": "Discover a wide range of beauty and personal care products, including skincare, makeup, haircare, fragrances, and grooming essentials from trusted brands.",
+        "status": false,
+        "trending": true,
+        "created_at": "2026-07-30T09:43:34.591Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 1,
+    "fields": {
+        "category": 1,
+        "name": "Oneplus 15R",
+        "vendor": "Oneplus store",
+        "product_image": "uploads/20260801151928OnePlus_15R_KV_1764061527286_1764061540164.avif",
+        "quantity": 14,
+        "original_price": 59000.0,
+        "selling_price": 58500.0,
+        "description": "OnePlus 15R | 12GB+256GB | Charcoal Black | World's First Snapdragon® 8 Gen 5 | 7400mAh Battery | Personalised AI | Game-Changing 165Hz Display | IP68 IP69 IP66 & IP69K | 4K 120fps Video",
+        "status": false,
+        "trending": true,
+        "created_at": "2026-07-22T03:54:38.059Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 2,
+    "fields": {
+        "category": 1,
+        "name": "Oneplus Nord",
+        "vendor": "Oneplus Store",
+        "product_image": "uploads/20260801151941OnePlus-Nord-6-3.avif",
+        "quantity": 10,
+        "original_price": 44999.0,
+        "selling_price": 44000.0,
+        "description": "OnePlus Nord 6 | 8GB+256GB | Pitch Black | Snapdragon 8s Gen 4 | Segment's First Stable 165FPS Gaming | Segment's Largest 9000mAh Battery | Most Complete IP Rating | Personalized AI",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T03:57:07.684Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 3,
+    "fields": {
+        "category": 1,
+        "name": "Samsung S26",
+        "vendor": "Clicktech Retail Private Ltd",
+        "product_image": "uploads/20260801152008fitted.jpg",
+        "quantity": 25,
+        "original_price": 118999.0,
+        "selling_price": 118000.0,
+        "description": "Samsung Galaxy S25 Ultra 5G AI Smartphone (Titanium Gray, 12GB RAM, 256GB Storage), 200MP Camera, S Pen Included, Long Battery Life",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T04:06:00.617Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 4,
+    "fields": {
+        "category": 1,
+        "name": "Samsung S25 ultra",
+        "vendor": "Litestylez",
+        "product_image": "uploads/2026080115202041AGB2bAjJL.jpg",
+        "quantity": 8,
+        "original_price": 93979.0,
+        "selling_price": 93000.0,
+        "description": "Samsung Galaxy S25 Ultra 5G (Titanium Whitesilver, 12GB RAM, 256GB Storage)",
+        "status": false,
+        "trending": true,
+        "created_at": "2026-07-22T04:08:23.289Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 5,
+    "fields": {
+        "category": 1,
+        "name": "Iphone 16",
+        "vendor": "TrueComRetail",
+        "product_image": "uploads/20260801152035iphone-16-front-back.webp",
+        "quantity": 4,
+        "original_price": 67900.0,
+        "selling_price": 67000.0,
+        "description": "iPhone 16. Built for Apple Intelligence. Featuring Camera Control. 48 MP Fusion camera. Five vibrant colours. And A18 chip.",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T04:12:36.757Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 6,
+    "fields": {
+        "category": 1,
+        "name": "iphone 17 pro",
+        "vendor": "Vision Star",
+        "product_image": "uploads/20260801152052-original-imahft5ndwfkx6ez.webp",
+        "quantity": 19,
+        "original_price": 130900.0,
+        "selling_price": 129999.0,
+        "description": "Silver, Cosmic Orange, Deep Blue\r\n\r\nAluminum unibody design\r\nCeramic Shield 2 front\r\nCeramic Shield back",
+        "status": false,
+        "trending": true,
+        "created_at": "2026-07-22T04:17:11.411Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 24,
+    "fields": {
+        "category": 4,
+        "name": "Washing Machine",
+        "vendor": "Dawntech electronics pvt limited",
+        "product_image": "uploads/2026080115275671pUPI7ylNL._SY879_.jpg",
+        "quantity": 45,
+        "original_price": 41190.0,
+        "selling_price": 40000.0,
+        "description": "Samsung 9 kg, 5 star, AI EcoBubble, Super Speed, Wi-Fi, Hygiene Steam with Inbuilt Heater, Digital Inverter, Fully-Automatic Front Load Washing Machine (WW90DG5U24AXTL, Inox)",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T05:32:10.244Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 25,
+    "fields": {
+        "category": 4,
+        "name": "Washing Machine",
+        "vendor": "Dawntech Private Limited",
+        "product_image": "uploads/2026080115283171pUPI7ylNL._SY879_.jpg",
+        "quantity": 34,
+        "original_price": 29695.0,
+        "selling_price": 29000.0,
+        "description": "Bosch 8 kg 5 Star Front Load Fully-Automatic Washing Machine, Steam Hygiene, AI ActiveWater, 15 Wash Programs, No Tangle or Wrinkle, SoftCare Paddle, Shiny Silver, WAJ2826BIN",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T05:34:02.565Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 26,
+    "fields": {
+        "category": 4,
+        "name": "Godrej RS EONVELVET",
+        "vendor": "Dawntech Elctronics Private Limited",
+        "product_image": "uploads/202608011528483140P4XnZL._SX342_SY445_QL70_FMwebp_.webp",
+        "quantity": 8,
+        "original_price": 69990.0,
+        "selling_price": 60000.0,
+        "description": "Godrej 600L 3Star 5 Years Comprehensive Warranty Smart Convertible Zones | Toughened Glass Door | Side by Side Refrigerator (2025 Model, RS EONVELVET 646C RIT SM BL, Storm Blue)",
+        "status": false,
+        "trending": true,
+        "created_at": "2026-07-22T05:36:24.878Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 27,
+    "fields": {
+        "category": 4,
+        "name": "Air Conditioners",
+        "vendor": "Dawntech Private Ltd",
+        "product_image": "uploads/2026080115315451TjEqdiuL._SX679_.jpg",
+        "quantity": 7,
+        "original_price": 33990.0,
+        "selling_price": 32000.0,
+        "description": "Voltas 1.5 ton 3 star,New star rated, Rating Inverter Split AC (Copper, Convertible 5-in-1 Cooling Mode, 2-Way Air Swing, Anti-dust Filter with Anti Microbial Coating, Auto Clean (183INV CAV, White)",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T05:38:06.780Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 28,
+    "fields": {
+        "category": 4,
+        "name": "Microwave Oven",
+        "vendor": "Dawntech Private Limited",
+        "product_image": "uploads/2026080115320641MZ4wdOWL._SX342_SY445_QL70_FMwebp_.webp",
+        "quantity": 14,
+        "original_price": 18390.0,
+        "selling_price": 17000.0,
+        "description": "LG 32 L Convection Microwave Oven (MC3286BRUM, Black, 360° Motorised Rotisserie for Bar-be-queing, 301 Auto Cook Menu, Stainless steel cavity, Indian Cuisine, Tandoor Se, Steam Clean & Diet Fry)",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T05:52:00.094Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 29,
+    "fields": {
+        "category": 4,
+        "name": "Air Fryer Oven",
+        "vendor": "RetailEz Pvt Ltd",
+        "product_image": "uploads/2026080115322481nj934mZvL._AC_CR0000_SX615_SY462_.jpg",
+        "quantity": 56,
+        "original_price": 8299.0,
+        "selling_price": 7900.0,
+        "description": "SOLARA 12L Air Fryer Oven for Home Kitchen, 1800W OTG Air Fryer Oven 12 Litre with 12 Presets, 9 Accessories, Grill, Roast, Bake, Reheat, AirFryer OTG, XX-Large, Recipe E-book, 1 Year Warranty, Black",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T05:53:48.316Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 30,
+    "fields": {
+        "category": 4,
+        "name": "Agaro Vaccum Cleaner",
+        "vendor": "ReytailEZ Pvt Ltd",
+        "product_image": "uploads/2026080115323541pgKrVoZYL._SY300_SX300_QL70_FMwebp_.webp",
+        "quantity": 6,
+        "original_price": 6699.0,
+        "selling_price": 6640.67,
+        "description": "AGARO Ace Wet & Dry Vacuum Cleaner for Home, 1600 Watts, 21.5 kPa Suction Power, 21 litres Tank Capacity, for Home Use, Blower Function, Washable 3L Dust Bag, Stainless Steel Body (Black, Red, Steel)",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T05:55:46.340Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 31,
+    "fields": {
+        "category": 4,
+        "name": "Sony Bravia 3 series smart LED Television",
+        "vendor": "Dawntech Pvt Ltd",
+        "product_image": "uploads/2026080115325641jcCWYYtkL._SY300_SX300_QL70_FMwebp_.webp",
+        "quantity": 9,
+        "original_price": 77970.0,
+        "selling_price": 78000.45,
+        "description": "Sony BRAVIA 3 Series 139 cm (55 inches) 4K Ultra HD AI Smart LED Google TV K-55S30B (Black)",
+        "status": false,
+        "trending": true,
+        "created_at": "2026-07-22T05:58:21.140Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 32,
+    "fields": {
+        "category": 4,
+        "name": "HP OmniBook X Flip",
+        "vendor": "ClickRetail Pvt Ltd",
+        "product_image": "uploads/2026080115332371jypufGVL._SX679_.jpg",
+        "quantity": 35,
+        "original_price": 115990.0,
+        "selling_price": 115000.0,
+        "description": "HP OmniBook X Flip OLED Intel Core Ultra 5 226V, 40 Tops (16GB LPDDR5x,1TB SSD) 3K, Touch, 120hz, 14''/35.6cm, Intel ARC Graphic,Win11, Office24, Meteor Silver, 1.38kg, fm0099TU,Pen, 2 in 1 AI Laptop",
+        "status": false,
+        "trending": true,
+        "created_at": "2026-07-22T06:02:05.337Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 33,
+    "fields": {
+        "category": 4,
+        "name": "Canon Camera",
+        "vendor": "Peach Imports",
+        "product_image": "uploads/20260801153339514o2F3a6EL._SY300_SX300_QL70_FMwebp_.webp",
+        "quantity": 25,
+        "original_price": 307344.0,
+        "selling_price": 305250.0,
+        "description": "Canon Powershot G7X Mark III Advanced Compact Camera",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:04:15.782Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 34,
+    "fields": {
+        "category": 5,
+        "name": "Peacock Showpiece",
+        "vendor": "GRAND PRODUCT",
+        "product_image": "uploads/2026080115335461CVJTe16-L._SY879_.jpg",
+        "quantity": 5,
+        "original_price": 2199.0,
+        "selling_price": 2006.0,
+        "description": "Peacock Statue Showpiece for Home Decor Decoration itemsnfor Living Room, Office (Peacock)",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:08:06.494Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 35,
+    "fields": {
+        "category": 5,
+        "name": "Railing Planters",
+        "vendor": "Etrade Online",
+        "product_image": "uploads/2026080114561251Q0GVjofL._SY300_SX300_QL70_FMwebp_.webp",
+        "quantity": 9,
+        "original_price": 2799.0,
+        "selling_price": 1399.0,
+        "description": "ecofynd 12 Inches Aurelia Railing Planters for Balcony, Hanging Pots for Plants, Wall Hanging Decorative Planters for Vertical Garden, Oval,12 inches, Pack of 6 (Black)",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:09:47.321Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 37,
+    "fields": {
+        "category": 4,
+        "name": "Sony Soundbar",
+        "vendor": "Clicktech Pvt Ltd",
+        "product_image": "uploads/2026080114555941E--EoLIIL._SX300_SY300_QL70_FMwebp_.webp",
+        "quantity": 5,
+        "original_price": 23990.0,
+        "selling_price": 17405.0,
+        "description": "Sony HT-S20R Real 5.1ch Dolby Digital Soundbar for TV with subwoofer and Compact Rear Speakers, 5.1ch Home Theatre System (400W,Bluetooth & USB Connectivity, HDMI & Optical connectivity)",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:23:22.219Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 38,
+    "fields": {
+        "category": 4,
+        "name": "Subwoofer",
+        "vendor": "Clicktech Pvt Ltd",
+        "product_image": "uploads/2026080114555031ySTQ-wRBL._SY300_SX300_QL70_FMwebp_.webp",
+        "quantity": 2,
+        "original_price": 25000.0,
+        "selling_price": 9999.0,
+        "description": "OBAGE Ultra Ultimate 2.1 Home Theatre System | 350W Peak Output | Powered Non-Pressed Subwoofer | Bluetooth 5.3, HDMI ARC, Optical in, USB | Deep Bass Surround Sound for TV, Music & Movies",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:26:20.202Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 39,
+    "fields": {
+        "category": 7,
+        "name": "Ceramic Bowl Set",
+        "vendor": "RetailEZ Pvt Ltd",
+        "product_image": "uploads/2026080114554271G7z9spPQL._SX679_.jpg",
+        "quantity": 56,
+        "original_price": 1699.0,
+        "selling_price": 749.0,
+        "description": "The Earth Store Cream Cherry Ceramic Bowl Set of 2, 250ML & Coffee Mug Set of 2, 300ML Microwave & Dishwasher Safe Mug and Bowl Combo Set for Serving | Perfect for Gifting & Daily Use",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:30:38.121Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 40,
+    "fields": {
+        "category": 7,
+        "name": "Stainless Steel Cook and Serve Set",
+        "vendor": "RetailEZ Pvt Ltd",
+        "product_image": "uploads/20260803143002825ce114fbde9f1e90be84e291128f16.jpg",
+        "quantity": 65,
+        "original_price": 899.0,
+        "selling_price": 609.0,
+        "description": "Amazon Brand - Solimo Set of 2 Stainless Steel Cook and Serve Set | Glass Lid | Dishwasher-Safe, 2L 700 ml|Induction and Gas Stove Compatible",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:32:32.639Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 41,
+    "fields": {
+        "category": 7,
+        "name": "Prestige 5 Litre TRIPLY Svachh Outer Lid Pressure Cooker",
+        "vendor": "RetailEZ Pvt Ltd",
+        "product_image": "uploads/2026080114545851iffT8QfvL._SX679_.jpg",
+        "quantity": 2,
+        "original_price": 4745.0,
+        "selling_price": 3686.0,
+        "description": "Prestige 5 Litre TRIPLY Svachh Outer Lid Pressure Cooker | Handi | Deep Lid for Spillage Control | Gas & Induction Compatible | Gasket Release System | Visual Pressure Indicator | 5Y Warranty | ISI",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:35:09.463Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 42,
+    "fields": {
+        "category": 7,
+        "name": "Casserole",
+        "vendor": "RetailEZ Pvt Ltd",
+        "product_image": "uploads/2026080114544641af-vRlCTL._SX300_SY300_QL70_FMwebp_.webp",
+        "quantity": 7,
+        "original_price": 1050.0,
+        "selling_price": 451.1,
+        "description": "Solimo Stainless Steel Insulated Solid Roti Server, 1.2 L, Silver",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:36:49.304Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 43,
+    "fields": {
+        "category": 7,
+        "name": "Storage Container",
+        "vendor": "RetailEZ Pvt Ltd",
+        "product_image": "uploads/2026080114542341PcNRGD9gL._SY300_SX300_QL70_FMwebp_.webp",
+        "quantity": 10,
+        "original_price": 299.0,
+        "selling_price": 169.0,
+        "description": "SR (Pack of 2) Oval Window Plastic Storage Container | Airtight Kitchen Storage Containers | Containers for Kitchen Storage with Window for Snacks, Dry Fruits, Tea & Coffee (Multicolor)(500ml)",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:38:47.200Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 44,
+    "fields": {
+        "category": 8,
+        "name": "Wood Wardrobe",
+        "vendor": "RAJASTHALI WOOD DECOR House",
+        "product_image": "uploads/2026080114541161XqAwGteOL._SX300_SY300_QL70_FMwebp_.webp",
+        "quantity": 8,
+        "original_price": 25999.0,
+        "selling_price": 16899.0,
+        "description": "Rajasthali Furniture Woodcrony Sheesham Wood Wardrobe With 1 Drawer And 3 Shelves Storage For Bedroom Wooden Almirah For Clothes For Living Room Bedroom Home, Solid Wood Furniture (Walnut_Finish)",
+        "status": false,
+        "trending": true,
+        "created_at": "2026-07-22T06:41:35.094Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 45,
+    "fields": {
+        "category": 8,
+        "name": "Bean Bag with Footrest & Cushion",
+        "vendor": "Jay Mahakal Co",
+        "product_image": "uploads/2026080114534641NuUF1gUbL._SY300_SX300_QL70_FMwebp_.webp",
+        "quantity": 6,
+        "original_price": 4999.0,
+        "selling_price": 2551.0,
+        "description": "KAM'S LIEU 6XL Luxury Faux Leather Bean Bag with Footrest & Cushion | Pre-Filled High-Density Polystyrene Beans | Premium Leatherette |Teardrop Handle Design | 6 Months Warranty Color- Beige",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:42:46.490Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 46,
+    "fields": {
+        "category": 8,
+        "name": "Wood Shoe Rack",
+        "vendor": "DeckUp",
+        "product_image": "uploads/2026080114533671PmrneT9tL._SX679_.jpg",
+        "quantity": 13,
+        "original_price": 10000.0,
+        "selling_price": 5000.0,
+        "description": "DeckUp Lexis 3-Door Engineered Wood Shoe Rack (Walnut, Matte Finish)",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:44:29.372Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 47,
+    "fields": {
+        "category": 8,
+        "name": "3 Seater Sofa",
+        "vendor": "GREESUM INDIA",
+        "product_image": "uploads/20260801145325510poKcQoqL.jpg",
+        "quantity": 6,
+        "original_price": 39999.0,
+        "selling_price": 22999.0,
+        "description": "3 Seater Sofa Antique Design Rope Furniture Set with Cushions for Living Room Outdoor Indoor Roof top Garden (Beige and White)",
+        "status": false,
+        "trending": true,
+        "created_at": "2026-07-22T06:47:34.152Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 48,
+    "fields": {
+        "category": 8,
+        "name": "Ottoman Stool for Living Room Foot Rest",
+        "vendor": "CaliforniaGallery Pvt. Ltd.",
+        "product_image": "uploads/2026080114530661XqAwGteOL._SX300_SY300_QL70_FMwebp_.webp",
+        "quantity": 2,
+        "original_price": 2999.0,
+        "selling_price": 939.0,
+        "description": "Ottoman Stool for Living Room Foot Rest | Velvet Small Ottoman Foot Stool | Solid Wood Legs | Footstool Puffy for Home, Bedroom & Makeup Table | 30 x 30 cm (12 x 12 Inch) | Yellow",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:48:58.351Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 49,
+    "fields": {
+        "category": 8,
+        "name": "Wood TV Unit",
+        "vendor": "Craftswood™",
+        "product_image": "uploads/2026080114524741LGy0q8q-L._SX300_SY300_QL70_FMwebp_.webp",
+        "quantity": 4,
+        "original_price": 30000.0,
+        "selling_price": 15245.0,
+        "description": "Solid Sheesham Wood TV Unit for Living Room | Wooden TV Cabinet with Storage & Drawers | Entertainment Center TV Stand | Walnut Finish Media Console Table | Handcrafted Furniture",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:50:59.883Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 50,
+    "fields": {
+        "category": 8,
+        "name": "Solid Wood Bed Cot Without Storage",
+        "vendor": "Navya Furniture",
+        "product_image": "uploads/2026080114522241PwKFrzCeL._SY300_SX300_QL70_FMwebp_.webp",
+        "quantity": 1,
+        "original_price": 41999.0,
+        "selling_price": 21199.0,
+        "description": "Bed | Queen (78 X 60) Solid Wood Bed Cot Without Storage, 1 Year Warranty | - Jesper Heavy Duty - Indian Honey",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-22T06:55:59.185Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 52,
+    "fields": {
+        "category": 9,
+        "name": "Chips",
+        "vendor": "ARIPL",
+        "product_image": "uploads/20260801145210b743167a93350581dcb4d55e1fa12ab5.jpg",
+        "quantity": 0,
+        "original_price": 65.0,
+        "selling_price": 50.0,
+        "description": "Lays Hot & Sweet chilli 82gm Pouch/80gm Pouch",
+        "status": false,
+        "trending": true,
+        "created_at": "2026-07-23T11:39:37.569Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 53,
+    "fields": {
+        "category": 9,
+        "name": "Sprite",
+        "vendor": "ARPIL",
+        "product_image": "uploads/20260801145154208462755f3f56d78f0e287a73ba2e43.jpg",
+        "quantity": 10,
+        "original_price": 80.0,
+        "selling_price": 60.0,
+        "description": "Sprite Zero 300ml Can | Lemon-Lime Sparkling Soft Drink (Zero Sugar) | The Coca-Cola Company",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-23T13:52:02.564Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 54,
+    "fields": {
+        "category": 9,
+        "name": "Maggie",
+        "vendor": "ARIPL",
+        "product_image": "uploads/2026080114511078bb7f8578e25a8c6199fc65d1661633.jpg",
+        "quantity": 9,
+        "original_price": 20.0,
+        "selling_price": 14.0,
+        "description": "MAGGI 2-Minute Instant Noodles, Favourite Masala Taste, Masala Noodles With Goodness Of Iron, Made With Choicest Quality Spices, 70g/72g/75g Pouch (weight may vary)",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-07-23T14:06:46.225Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 55,
+    "fields": {
+        "category": 11,
+        "name": "Kay Beauty cashmere lipstick",
+        "vendor": "Nykaa Retailers",
+        "product_image": "uploads/20260803130844lipstick.jpg",
+        "quantity": 10,
+        "original_price": 1099.0,
+        "selling_price": 999.0,
+        "description": "Elevate your makeup routine with Cashmere Lip & Cheek Blur, a plush, mousse-like blur cream designed to deliver a sophisticated, airbrushed flush of color for both lips and cheeks. This weightless formula melts effortlessly into the skin, transforming from a whipped, airy texture into a smooth, velvety, second-skin finish.",
+        "status": false,
+        "trending": true,
+        "created_at": "2026-08-03T05:53:46.289Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 56,
+    "fields": {
+        "category": 11,
+        "name": "Nykaa So Creme! Creamy Matte Lipstick - Game On (4.2g)",
+        "vendor": "Nykaa Retailer",
+        "product_image": "uploads/20260803130917ddb35eb9c108da1b5ccc70bc2b6cd76a.jpg",
+        "quantity": 5,
+        "original_price": 329.0,
+        "selling_price": 214.0,
+        "description": "This lipstick feels creamy from the first swipe itself. It glides across the lips smoothly and doesn't have that dry dragging feel that some matte lipsticks can give.\r\n\r\nEven though the finish looks matte, it still keeps a softer and more comfortable feel on the lips. It sits somewhere between a classic creamy lipstick and a flat liquid matte, which is why many people find it easier to wear daily.",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T05:56:23.028Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 57,
+    "fields": {
+        "category": 11,
+        "name": "Lakme 9 To 5 lipstick",
+        "vendor": "Nykaa Retailers",
+        "product_image": "uploads/20260803112911ac9aa41LAKME00000014_1.avif",
+        "quantity": 6,
+        "original_price": 650.0,
+        "selling_price": 559.0,
+        "description": "Lakme 9 To 5 Powerplay Priming Matte Lipstick For 16Hr Intense Matte , Rosy Sunday",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T05:59:11.892Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 58,
+    "fields": {
+        "category": 11,
+        "name": "M.A.C Lipstick",
+        "vendor": "Nykaa Retailer",
+        "product_image": "uploads/20260803113101f26df5e773602663651_1.avif",
+        "quantity": 8,
+        "original_price": 2550.0,
+        "selling_price": 2550.0,
+        "description": "M.A.C MACximal Satin Lipstick - Creme In Your Coffee\r\n(3.5g)",
+        "status": false,
+        "trending": true,
+        "created_at": "2026-08-03T06:01:01.481Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 59,
+    "fields": {
+        "category": 11,
+        "name": "Clinique Moisture Surge",
+        "vendor": "Nykaa Retailer",
+        "product_image": "uploads/2026080313094692d055332c0d99a2f663effeb289bf51.jpg",
+        "quantity": 4,
+        "original_price": 1200.0,
+        "selling_price": 1200.0,
+        "description": "A lightweight gel moisturiser that focuses on hydration without making the skin feel heavy or oily\r\n\r\nWorks well for:\r\n\r\nSkin that feels dehydrated or tight\r\nOily and combination skin\r\nDaytime hydration\r\nWearing under sunscreen or makeup\r\nMight not be enough if:",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T06:02:40.144Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 60,
+    "fields": {
+        "category": 11,
+        "name": "Dot & Key Vitamin C+E Super Bright",
+        "vendor": "Nykaa Retailer",
+        "product_image": "uploads/2026080311341898888bdcd8d7eba3dff7c3aede739493.jpg",
+        "quantity": 13,
+        "original_price": 249.0,
+        "selling_price": 214.0,
+        "description": "Dot & Key Vitamin C+E Super Bright Gel Face Wash, Sicilian Blood Orange & Niacinamide\r\n(100ml)",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T06:04:18.218Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 61,
+    "fields": {
+        "category": 9,
+        "name": "Aveeno Daily Moisturising Lotion",
+        "vendor": "Nykaa Retailer",
+        "product_image": "uploads/2026080311372094d0c020983e591c89af6f17764212e4.jpg",
+        "quantity": 5,
+        "original_price": 1260.0,
+        "selling_price": 1099.0,
+        "description": "Aveeno Daily Moisturising Lotion - Natural Oat Body Moisturizer For Normal, Dry & Sensitive Skin\r\n(354ml)",
+        "status": false,
+        "trending": true,
+        "created_at": "2026-08-03T06:07:20.222Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 62,
+    "fields": {
+        "category": 11,
+        "name": "Lakme Strawbeery sheetmask",
+        "vendor": "Nykaa Retailer",
+        "product_image": "uploads/20260803114018d296249bc3563804b825283c3bdc73dc.jpg",
+        "quantity": 6,
+        "original_price": 109.0,
+        "selling_price": 73.0,
+        "description": "Lakme Blush & Glow Strawberry Sheet Mask",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T06:10:18.586Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 63,
+    "fields": {
+        "category": 11,
+        "name": "The Body Shop British Rose Shower Gel,",
+        "vendor": "Nykaa Retailers",
+        "product_image": "uploads/202608031142058e92928720fb95fa5bb697b4633d5319.jpg",
+        "quantity": 2,
+        "original_price": 395.0,
+        "selling_price": 360.0,
+        "description": "Indulge in a refreshing floral shower experience with The Body Shop British Rose Shower Gel — a beautifully scented body cleanser inspired by the elegance of freshly picked British roses. This gentle, vegan-friendly shower gel creates a rich lather while leaving your skin feeling clean, refreshed, and delicately fragranced. Perfect for a relaxing self-care ritual, this premium body wash brings a spa-like floral touch to your everyday routine.",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T06:12:05.681Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 64,
+    "fields": {
+        "category": 11,
+        "name": "Wanderlust Berry Tini Fruity Floral Perfume Body & Hair Mist with Candied Cherry & Rose",
+        "vendor": "Nykaa Retailers",
+        "product_image": "uploads/202608031145385627102a30b4b0b3e7b04a4e405661f6.jpg",
+        "quantity": 27,
+        "original_price": 599.0,
+        "selling_price": 497.0,
+        "description": "Nykaa Wanderlust Dreaming of Paris Body & Hair Mist, Champagne & Berries Fragrance, Cruelty-Free, Long-Lasting Fine Perfume Spray, 200ml",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T06:15:38.732Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 65,
+    "fields": {
+        "category": 11,
+        "name": "Burberry Goddess Eau De Parfum",
+        "vendor": "Nykaa Retailers",
+        "product_image": "uploads/202608031155074c6659919284b5fee2d263f2143bd97a.jpg",
+        "quantity": 10,
+        "original_price": 6795.0,
+        "selling_price": 6795.0,
+        "description": "The power within. Burberry Goddess tells a story of self-discovery, found through confidence, strength and kindness. Burberry Goddess Eau de Parfum is a unique gourmand aromatic fragrance led by a powerful trio of vanillas. On top, a vanilla infusion with woody tonalities, at the heart a vanilla caviar with a rich sweetness, and at the base a vanilla absolute enriched with luminous lavender. This sensual fragrance is a vegan formula made using vanillas from Madagascar.",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T06:25:07.639Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 66,
+    "fields": {
+        "category": 9,
+        "name": "Kissan Mixed Fruit Jam 700 g",
+        "vendor": "RK WORLD_og_blr5",
+        "product_image": "uploads/2026080311571441mxYgsQffL._SY300_SX300_QL70_FMwebp_.webp",
+        "quantity": 16,
+        "original_price": 280.0,
+        "selling_price": 240.0,
+        "description": "Buy Kissan Mixed Fruit Products online at bigbasket And Get Them Delivered At Your Doorstep. Best Quality Always Ensured Now available at",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T06:27:14.710Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 67,
+    "fields": {
+        "category": 9,
+        "name": "Nutella Hazelnut Spread with Cocoa, 750g",
+        "vendor": "RK WORLD_og_blr5",
+        "product_image": "uploads/20260803115924bfcce4529666f66b3bd91c8515f3fca7.jpg",
+        "quantity": 6,
+        "original_price": 819.0,
+        "selling_price": 759.0,
+        "description": "A Rich, creamy Hazelnut spread with cocoa\r\nOur Quality… 7 ingredients No hydrogenated fats No preservatives No colorings\r\nTasty way to start your day! Try with Bread, Roti, or Dosa",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T06:29:24.804Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 68,
+    "fields": {
+        "category": 9,
+        "name": "Amazon Brand - Vedaka Unpolished Toor Dal (Arhar Dal) | 1 Kg | Naturally Rich Source Of Protein | Naturally Cholesterol-Free | No artificial Colours a",
+        "vendor": "ARIPL, Bangalore",
+        "product_image": "uploads/202608031201307fcdbe2f32bcb28ea48eaa3e0466e1e8.jpg",
+        "quantity": 27,
+        "original_price": 300.0,
+        "selling_price": 163.0,
+        "description": "Vedaka Item Weight1 Kilograms SpecialityUnpolished Allergen InformationAllergen-Free Item FormWhole Diet TypeVegetarian",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T06:31:30.029Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 69,
+    "fields": {
+        "category": 9,
+        "name": "GRB Ghee Bottle, 500ml",
+        "vendor": "ARIPL, Bangalore",
+        "product_image": "uploads/2026080313110227d54b78039becd94e0e792720d2d33d.jpg",
+        "quantity": 16,
+        "original_price": 475.0,
+        "selling_price": 411.0,
+        "description": "GRB - the sign of purity\r\nAroma retention pack\r\nflavor_name:natural\r\nitem_form:liquid\r\nmaterial_features:vegetarian",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T06:32:44.007Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 70,
+    "fields": {
+        "category": 9,
+        "name": "Tata Tea Kanan Devan Classic Black Tea Loose Leaves, 500 Grams",
+        "vendor": "ARIPL, Bangalore",
+        "product_image": "uploads/20260803120507346cdcc43c6908a9fc3a6e7685c92ed9.jpg",
+        "quantity": 15,
+        "original_price": 170.0,
+        "selling_price": 138.0,
+        "description": "Tata Tea Kanan Devan has handpicked teas that are grown in the Kanan Devan Hills, in Munnar, at an elevation of 5600 feet.\r\nTeas grown at this elevation and pristine nature conditions, blended by the experts, give Kanan Devan Classic the distinct fresh flavor that it is famous for\r\nCountry of Origin: India\r\nFlavor Name: Natural ; Item Form: Loose Leaves ; Caffeine Content: Medium Caffeine",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T06:35:07.500Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 71,
+    "fields": {
+        "category": 9,
+        "name": "Continental Coffee XTRA Instant Coffee Powder | 200g Jar | 30% Chicory and 70% Robusta Coffee | Medium Roast Instant Coffee | Granulated Instant Coffe",
+        "vendor": "ARIPL, Bangalore",
+        "product_image": "uploads/202608031206482481bcba9849cb3772b4f1be2aac57e4.jpg",
+        "quantity": 7,
+        "original_price": 525.0,
+        "selling_price": 392.0,
+        "description": "Rich Blend: Continental Coffee Xtra combines 70% coffee and 30% chicory medium roast, offering a flavorful coffee experience.\r\nChicory Infusion: The addition of chicory enhances the coffee's richness and depth, making every sip satisfying and flavourful.\r\nGranulated Perfection: The granulated instant coffee powder locks in aroma and flavour, ensuring every cup is as fresh as the first.",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T06:36:48.680Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 72,
+    "fields": {
+        "category": 9,
+        "name": "Surf Excel Matic Powder Front Load 6kg +500ml liquid",
+        "vendor": "RK WORLD_og_blr5",
+        "product_image": "uploads/20260803120858ac98f27f258a9038735d4c6137b0c96f.jpg",
+        "quantity": 13,
+        "original_price": 1475.0,
+        "selling_price": 1385.0,
+        "description": "Tough stain removal in machine with No.1 Matic detergent Surf Excel matic\r\nDesigned specifically for front load washing machine usage\r\nSurf Excel matic front load laundry detergent dissolves completely leaving no residue on your clothes on in the machine",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T06:38:58.980Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 73,
+    "fields": {
+        "category": 9,
+        "name": "Britannia Good Day Choco Chip Cookies, 400 g",
+        "vendor": "ARIPL, Bangalore",
+        "product_image": "uploads/2026080312111985449809979e25dc9e05e89710c2fcdf.jpg",
+        "quantity": 15,
+        "original_price": 160.0,
+        "selling_price": 99.0,
+        "description": "For the lovers of chocolate and crunch made with balance, a cookie so delicious\r\nChoco chips sprinkled all over to fill every bite with mouth-watering sweet chocolate flavour\r\nEnjoy these cookies with a glass of milk to soften the flavours, or take a bite directly to enjoy the delicacy of taste",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T06:41:19.137Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 74,
+    "fields": {
+        "category": 5,
+        "name": "Craftvatika Meditating Monk Buddha Smoke Backflow Cone Incense Holder Showpiece For Office Desk,",
+        "vendor": "Craftika",
+        "product_image": "uploads/2026080313155151eBV606V9L._SX679_.jpg",
+        "quantity": 8,
+        "original_price": 199.0,
+        "selling_price": 199.0,
+        "description": "Crafted with meticulous attention to detail, this incense burner features an intricate Buddha design that embodies serenity and inner peace",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T06:43:12.592Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 75,
+    "fields": {
+        "category": 5,
+        "name": "ecofynd Glass Terrarium Bowl, Fish Bowl, Crystal Clear Aquarium Bowl for Fish, Round Bubble Vase for Events, Decorating, Xmas Home Decor, or Office De",
+        "vendor": "Ecofynd",
+        "product_image": "uploads/2026080313153220260803121539c75e44c8a4322ec99f2a9e46000e032e.jpg",
+        "quantity": 13,
+        "original_price": 219.0,
+        "selling_price": 219.0,
+        "description": "Ecofynd Glass Terrarium Bowl boasts a sleek, round bubble shape that adds a modern and sophisticated touch to any setting. Its minimalist design makes it a versatile piece that can complement various decor styles, from contemporary to classic.",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T06:45:39.904Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 77,
+    "fields": {
+        "category": 5,
+        "name": "SAF Wooden Idols & Figurine Good Things are Going to Happen Motivational Quote Table Decor for Office Desk,Home Decor Item,Living Room,Bedroom,Modern",
+        "vendor": "SAF",
+        "product_image": "uploads/2026080312184251g5QUyzXL._SY300_SX300_QL70_FMwebp_.webp",
+        "quantity": 5,
+        "original_price": 170.0,
+        "selling_price": 110.0,
+        "description": "Quirky Home Decor: Infuse personality into your living spaces with unique and unconventional decor items that spark conversations and add a touch of playfulness.",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T06:48:42.132Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 85,
+    "fields": {
+        "category": 1,
+        "name": "Motorola G77 Power",
+        "vendor": "Whitepine Mobitech Private Limited",
+        "product_image": "uploads/20260803133255618E89gPCHL._SX679_.jpg",
+        "quantity": 10,
+        "original_price": 44999.0,
+        "selling_price": 24567.0,
+        "description": "Motorola G77 Power (Pantone Nautical Blue, 8GB RAM, 128GB Storage) | MediaTek Dimensity 6400 Octa-Core Processor | 50MP + 8MP AI Dual Rear Camera | 32MP Front Camera | 6.72-inch FHD+ 120Hz Display | | MediaTek Dimensity 6400 Octa-Core Processor, 50MP + 8MP AI Dual Rear Camera, 32MP Front Camera, 6.72-inch FHD+ 120Hz Display",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T08:02:55.063Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 86,
+    "fields": {
+        "category": 1,
+        "name": "OnePlus N6 128GB 6GB Fresh Mint",
+        "vendor": "Darshita Etel",
+        "product_image": "uploads/2026080314101920260803133708d222ce1a18f1b48a8e078d240f0c1393.jpg",
+        "quantity": 2,
+        "original_price": 33990.0,
+        "selling_price": 24999.0,
+        "description": "Always On - OnePlus N6 boasts the biggest 8000mAh battery and the fastest 45W charging in the segment for an uninterrupted entertainment experience. Built for the long haul, this battery is engineered to stay healthy and reliable for 7 years, keeping your daily grind completely charge-anxiety free.",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T08:07:08.341Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 87,
+    "fields": {
+        "category": 1,
+        "name": "oneplus nord 6",
+        "vendor": "Darshita Etel",
+        "product_image": "uploads/20260803141520548d8de69bee4b52675e029362febd29_1.jpg",
+        "quantity": 11,
+        "original_price": 52999.0,
+        "selling_price": 44999.0,
+        "description": "OnePlus Nord 6 | 8GB+256GB | Pitch Black | Snapdragon 8s Gen 4 | Segment's First Stable 165FPS Gaming | Segment's Largest 9000mAh Battery | Most Complete IP Rating | Personalized AI",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T08:45:20.603Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 88,
+    "fields": {
+        "category": 1,
+        "name": "OPPO A6 5G Smartphone",
+        "vendor": "imoo India",
+        "product_image": "uploads/2026080314184890106e3f6b0d0f2e6bf613e82d749d82.jpg",
+        "quantity": 13,
+        "original_price": 52999.0,
+        "selling_price": 31599.0,
+        "description": "OPPO A6 5G Smartphone 6GB+256GB Blue | 6.7-inch 120Hz Display, 7000mAh Battery, 45W Fast Charging, 8MP & 50MP Camera, Dimensity 6300 Processor, IP69",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T08:48:48.093Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 89,
+    "fields": {
+        "category": 1,
+        "name": "REDMI A7 Pro 5G",
+        "vendor": "Darshita Etel",
+        "product_image": "uploads/2026080314215651a480b6087466ff0cb9a3bd55dea065.jpg",
+        "quantity": 15,
+        "original_price": 15999.0,
+        "selling_price": 14499.0,
+        "description": "REDMI A7 Pro 5G (Mist Blue, 4GB RAM, 64GB Storage) | Segment's Fastest Processor | Segment's Largest Battery | Segment's Largest & Smoothest 6.9in 120Hz Display",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T08:51:56.653Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 90,
+    "fields": {
+        "category": 1,
+        "name": "QOO Z11 Lite",
+        "vendor": "Darshita Etel",
+        "product_image": "uploads/2026080314233041d2KAyryGL._SY300_SX300_QL70_FMwebp_.webp",
+        "quantity": 7,
+        "original_price": 19499.0,
+        "selling_price": 33999.0,
+        "description": "Non-Stop, Lag Free Performance: Powered by the MediaTek Dimensity 6300 5G Processor with a 579K+ AnTuTu Score* for smooth everyday performance. The upgraded 2.4GHz CPU enables faster app launches and seamless multitasking. AI SuperLink boosts signal strength by 10%* for more reliable connectivity.",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T08:53:30.881Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 91,
+    "fields": {
+        "category": 1,
+        "name": "Nothing Phone",
+        "vendor": "MonsoonTreasureSALE",
+        "product_image": "uploads/2026080314252431oLAQuOL._SY300_SX300_QL70_FMwebp_.webp",
+        "quantity": 4,
+        "original_price": 29999.0,
+        "selling_price": 27694.0,
+        "description": "Nothing Phone (3a Lite) (Black, 128 GB) (8 GB RAM)",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T08:55:24.515Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 92,
+    "fields": {
+        "category": 7,
+        "name": "Salt and Pepper Grinder",
+        "vendor": "GLOWPETAL",
+        "product_image": "uploads/20260803143352732ff3881be1467c71237a6d2c46cdb3.jpg",
+        "quantity": 8,
+        "original_price": 599.0,
+        "selling_price": 189.0,
+        "description": "PREMIUM CONSTRUCTION: Durable stainless steel lid with glass body construction, featuring a ceramic grinding mechanism for long-lasting performance",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T09:03:35.801Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 93,
+    "fields": {
+        "category": 7,
+        "name": "Premium Stainless Steel Spice Container Set",
+        "vendor": "Just Handmade Products",
+        "product_image": "uploads/2026080314352951x7DsNLSBL.jpg",
+        "quantity": 7,
+        "original_price": 2600.0,
+        "selling_price": 999.0,
+        "description": "COMPLETE SPICE SET: Includes 8 uniquely labelled containers for Laung, Mirch, Jeera, Haldi, Garam Masala, Kali Mirch, Elaichi, and Herbs & Spices.",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T09:05:29.076Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 94,
+    "fields": {
+        "category": 7,
+        "name": "Prestige Non-Stick Dosa Tawa 27.5cm",
+        "vendor": "RetailEZ Pvt Ltd",
+        "product_image": "uploads/2026080314365231pnMt1jZSL._SY300_SX300_QL70_FMwebp_.webp",
+        "quantity": 6,
+        "original_price": 1100.0,
+        "selling_price": 902.0,
+        "description": "Advanced non-stick surface ensures smooth food release, minimal oil use, and easy cleaning for healthier everyday cooking.",
+        "status": false,
+        "trending": false,
+        "created_at": "2026-08-03T09:06:52.657Z"
+    }
+},
+{
+    "model": "store.favourite",
+    "pk": 7,
+    "fields": {
+        "user": 7,
+        "product": 35,
+        "created_at": "2026-07-28T17:16:15.977Z"
+    }
+},
+{
+    "model": "store.favourite",
+    "pk": 9,
+    "fields": {
+        "user": 7,
+        "product": 52,
+        "created_at": "2026-07-28T17:18:01.411Z"
+    }
+},
+{
+    "model": "store.favourite",
+    "pk": 10,
+    "fields": {
+        "user": 7,
+        "product": 32,
+        "created_at": "2026-07-29T05:38:43.232Z"
+    }
+},
+{
+    "model": "store.favourite",
+    "pk": 11,
+    "fields": {
+        "user": 7,
+        "product": 31,
+        "created_at": "2026-07-29T06:26:05.067Z"
+    }
+},
+{
+    "model": "store.favourite",
+    "pk": 14,
+    "fields": {
+        "user": 3,
+        "product": 39,
+        "created_at": "2026-08-03T10:48:32.380Z"
+    }
+},
+{
+    "model": "store.favourite",
+    "pk": 15,
+    "fields": {
+        "user": 3,
+        "product": 40,
+        "created_at": "2026-08-03T10:48:37.778Z"
+    }
+},
+{
+    "model": "store.favourite",
+    "pk": 16,
+    "fields": {
+        "user": 3,
+        "product": 1,
+        "created_at": "2026-08-03T10:52:56.939Z"
+    }
+},
+{
+    "model": "store.order",
+    "pk": 1,
+    "fields": {
+        "user": 3,
+        "fname": "Swetha M",
+        "lname": "",
+        "email": "mswetha442@gmail.com",
+        "phone": "874310654",
+        "address": "123,street ",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": "",
+        "total_price": 60000.0,
+        "payment_mode": "Cash On Delivery",
+        "payment_id": "",
+        "order_status": "Cancelled",
+        "created_at": "2026-07-30T16:14:08.502Z"
+    }
+},
+{
+    "model": "store.order",
+    "pk": 2,
+    "fields": {
+        "user": 3,
+        "fname": "Swetha ",
+        "lname": "",
+        "email": "mswetha442@gmail.com",
+        "phone": "9657843232",
+        "address": "234,Street",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": "",
+        "total_price": 1949.0,
+        "payment_mode": "Cash On Delivery",
+        "payment_id": "",
+        "order_status": "Cancelled",
+        "created_at": "2026-07-31T05:03:32.248Z"
+    }
+},
+{
+    "model": "store.order",
+    "pk": 3,
+    "fields": {
+        "user": 3,
+        "fname": "swetha",
+        "lname": "m",
+        "email": "mswetha442@gmail.com",
+        "phone": "768798090",
+        "address": "wwer",
+        "city": "btuiop",
+        "state": "ryyijlk;",
+        "country": "yijgyhjkfd",
+        "pincode": "87654",
+        "total_price": 19450.0,
+        "payment_mode": "COD",
+        "payment_id": null,
+        "order_status": "Cancelled",
+        "created_at": "2026-07-31T06:45:57.648Z"
+    }
+},
+{
+    "model": "store.order",
+    "pk": 4,
+    "fields": {
+        "user": 3,
+        "fname": "dghj",
+        "lname": "m",
+        "email": "mswetha442@gmail.com",
+        "phone": "456789321",
+        "address": "erthj",
+        "city": "gjjkkkk",
+        "state": "erty",
+        "country": "rtyuu",
+        "pincode": "87654",
+        "total_price": 1601.1,
+        "payment_mode": "COD",
+        "payment_id": null,
+        "order_status": "Cancelled",
+        "created_at": "2026-08-03T10:44:56.201Z"
+    }
+},
+{
+    "model": "store.order",
+    "pk": 5,
+    "fields": {
+        "user": 3,
+        "fname": "swetha",
+        "lname": "s",
+        "email": "swetha123@gmail.com",
+        "phone": "8677890088",
+        "address": "jkum",
+        "city": "tuty",
+        "state": "tn",
+        "country": "india",
+        "pincode": "787888",
+        "total_price": 117000.0,
+        "payment_mode": "COD",
+        "payment_id": null,
+        "order_status": "Delivered",
+        "created_at": "2026-08-03T10:54:40.032Z"
+    }
+},
+{
+    "model": "store.order",
+    "pk": 6,
+    "fields": {
+        "user": 1,
+        "fname": "Arjun",
+        "lname": "S",
+        "email": "arjuna2@gmail.com",
+        "phone": "8976543267",
+        "address": "76 , cross street",
+        "city": "Madurai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "pincode": "634901",
+        "total_price": 2551.0,
+        "payment_mode": "COD",
+        "payment_id": null,
+        "order_status": "Pending",
+        "created_at": "2026-08-20T05:30:34.735Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 1,
+    "fields": {
+        "order": 1,
+        "product": 26,
+        "price": 60000.0,
+        "quantity": 1,
+        "created_at": "2026-07-31T05:50:37.515Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 3,
+    "fields": {
+        "order": 2,
+        "product": 39,
+        "price": 749.0,
+        "quantity": 1,
+        "created_at": "2026-07-31T05:50:37.515Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 4,
+    "fields": {
+        "order": 3,
+        "product": 45,
+        "price": 2551.0,
+        "quantity": 1,
+        "created_at": "2026-07-31T06:45:57.660Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 5,
+    "fields": {
+        "order": 3,
+        "product": 44,
+        "price": 16899.0,
+        "quantity": 1,
+        "created_at": "2026-07-31T06:45:57.679Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 7,
+    "fields": {
+        "order": 4,
+        "product": 42,
+        "price": 451.1,
+        "quantity": 1,
+        "created_at": "2026-08-03T10:44:56.223Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 8,
+    "fields": {
+        "order": 5,
+        "product": 1,
+        "price": 58500.0,
+        "quantity": 2,
+        "created_at": "2026-08-03T10:54:40.038Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 9,
+    "fields": {
+        "order": 6,
+        "product": 45,
+        "price": 2551.0,
+        "quantity": 1,
+        "created_at": "2026-08-20T05:30:34.749Z"
+    }
+}
+]
