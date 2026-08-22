@@ -19,12 +19,16 @@ from django.urls import path , include
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
-
+from django.contrib import admin
+from django.urls import path, include
+from django.templatetags.static import static
+from django.views.generic.base import RedirectView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('store.urls')),   
     path('dashboard/', include('adminpanel.urls')),
     path("admin-login/",auth_views.LoginView.as_view( template_name="adminpanel/login.html" ), name="admin_login",),
+    path('favicon.ico', RedirectView.as_view(url=static('images/favicon.ico'))),
 ]
 
 if settings.DEBUG:
