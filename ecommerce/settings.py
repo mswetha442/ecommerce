@@ -19,8 +19,7 @@ from dotenv import load_dotenv
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Load local environment variables
-load_dotenv(BASE_DIR / '.env')
-
+load_dotenv
 
 
 
